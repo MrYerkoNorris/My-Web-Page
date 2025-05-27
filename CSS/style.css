@@ -1,0 +1,141 @@
+/*-------In general-------*/
+
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(242, 253, 253);
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+/*------- HEADER -------*/
+body.home .header__name-title {
+    display: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: orange;
+    height: 80px;
+}
+
+
+/*logo*/
+.header__logo-container {
+    height: 100%;
+    background-color: orangered;
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+}
+
+.header__logo {
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+    background-color: red;
+    font-size: 9vh;
+}
+
+
+/*nav*/
+.header__nav-list {
+    background-color: orangered;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.header__nav-list-item a{
+    background-color: transparent;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.header__nav-list-item a:hover {
+    background-color: rgba(255, 255, 255, 0.226);
+    color: black;
+}
+
+
+
+
+/*------- MAIN -------*/
+/*name*/
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 80vh;
+    background-color: rgb(109, 214, 123);
+}
+
+.big-name__container{
+    flex:2;
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+}
+.big-name__container h1{
+    font-size: 7em;
+    color: black;
+    text-align: start;
+    margin: 80px 0 0 15px;
+}
+
+.big-name__container p{
+    font-size: 1.5em;
+    color: black;
+    text-align: start;
+    margin: 5px 15px 10px 0;
+    background-color: salmon;
+    width: 80%;
+    align-self: end;
+}
+
+.big-name__container p:first-of-type{
+    margin-right: 130px;
+    font-size: 1.8em;
+}
+
+/*at right - presentation*/
+.presentation__container{
+    flex:1;
+    height: 90%;
+    background-color: rgb(161, 150, 28);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+}
+.presentation__image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 400px;
+    background-color: blue;
+    align-self: center;
+}
+.presentation__image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
